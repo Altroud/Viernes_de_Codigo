@@ -1,130 +1,178 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        .red-bold {
+          color: red;
+          font-weight: bold;
+        }
+      </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sesión 2</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/night.css">
+    <script src="./js/script.js"></script>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Información General -->
+            <section>
+                <h1 style="font-size: 50px;">Viernes de Código</h1>
+                <h1 style="font-size: 50px;">Sesión 2: Tipos de variables - Estructura de Datos y Operaciones Básicas en Python</h1>
+                <h1 style="font-size: 50px;">18/08/2023</h1>
+                <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
+                <h1 style="font-size: 50px;">Universidad del Norte</h1>
+                <h1 style="font-size: 50px;">Departamento de Economía</h1>
+            </section>
 
-		<title>Sesión 1</title>
+            <!-- Slide 3: Programación -->
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/night.css">
-		<script src="./js/script.js"></script>
+            <section data-auto-animate data-transition="convex">
+                <h1 style="font-size:60px">Programación</h1>
+                <ul style="list-style-type:'👌😁'">
+                    <li>Registro y Asistencia</li>
+                    <li>Grupo de Discord</li>
+                    <li>Retroalimentación</li>
+                    <li>Variables básicas: String, float, boolean, int</li>
+                    <li>Manejo de variables: Métodos</li>
+                    <li>Estructura de Datos: listas, diccionarios, tuplas</li>
+                    <li>Operaciones básicas en python</li>
+                </ul>
+            </section>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1 style="font-size: 50px;">Viernes de Código</h1>
-					<br>		
-					<h1 style="font-size: 50px;">11/08/2023</h1>
-					<br>
-					<h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
-					<br>
-					<h1 style="font-size: 50px;">Universidad del Norte</h1>
-					<br>
-					<h1 style="font-size: 50px;">Departamento de Economía</h1>
-				</section>
-				<section>
-					<h1 style="font-size: 50px;">Registro y Asistencia</h1>
-					<br>
-					<a href="https://tananeo.uninorte.edu.co/marketplace/servicios/analisisdedatosphyton202330" 
-					target="_blank">Inscripción a Viernes de Código</a>
-					<br>
-					<br>
-					<a href="https://forms.gle/ahsPCGUb3EdLZuTq7" 
-					target="_blank">Asistencia a Viernes de Código</a>
-				</section>
-				</section>
+            <!-- Slide 2: Registro y Asistencia -->
+            
+            <section>
+                <h1 style="font-size: 50px;">Registro y Asistencia</h1>
+                <br>
+                <a href="https://tananeo.uninorte.edu.co/marketplace/servicios/analisisdedatosphyton202330" target="_blank">Inscripción a Viernes de Código</a>
+                <br>
+                <br>
+                <a href="https://forms.gle/ahsPCGUb3EdLZuTq7" target="_blank">Asistencia a Viernes de Código</a>
+            </section>
 
-				<section data-auto-animate data-transition="convex">
-					<h1 style="font-size:60px">Programación</h1>
-					<ul style="list-style-type:'🤩'">
-						<li>Presentación</li>
-						<li>¿Qué es la programación y que es Python?</li>
-						<li>Instalación y configuración del entorno de trabajo</li>
-						<li>Fundamentos de Visual Studio Code</li>
-						<li>Mi Primer Hola Mundo en Python</li>
-						<li>Presentación del repositorio de Git-Hub</li>
-					</ul>
-				</section>
+            <!-- Slide 4: Presentación - José David Mendoza Pérez -->
+            <section data-auto-animate>
+                <h2>Grupo de Discord</h2>
+                <br>
+                <ul style="list-style-type:'😊'">
+                    <a href="https://discord.gg/S9wuHF6g" target="_blank">Grupo de Discord</a>                 
+                </ul>
+            </section>
+            <section>
+                <h2 style="font-size: 60px;">¿Qué hemos aprendido hasta ahora?</h2>
+                <ul style="list-style:'🤓';">
+                    <li style="font-size: 40px;">Instalación y configuración del entorno de trabajo</li>
+                </ul>
+            </section>            
 
-				<section data-auto-animate data-transition="convex">
-					<h2>Presentación</h2>
-					<ul style="list-style-type:'😎'">
-						<li>Economista de la UN</li>
-					</ul>
-				</section>
+            <!-- Slide 5: ¿Qué es la programación y qué es Python? -->
+            <section data-auto-animate>
+                <h2>Variables básicas</h2>
+                <ul style="list-style-type:'😎'">
+                    <li>Tipos de variables</li>
+                        <ul style="list-style-type:'📖'">
+                            <li>Strings</li>
+                        </ul>
+                        <ul style="list-style-type:'📖">
+                            <li>Booleans</li>
+                            <li>Ints</li>
+                            <li>Floats</li>
+                        </ul>
+                </ul>
+            </section>
+            <section>
+                <h2 style="font-size: 40px;">String o Cadenas de Texto</h2>
+                <p style="text-align: justify;">Son variables de tipo alfabético, es decir, texto plano.</p>
+                <pre><code data-trim data-noescape>
+            a = "Hola Mundo :D"
+            b = "Esta clase es aburrida."
+            c = "esta clase <span class='red-bold'>no</span> es aburrida."
+                </code></pre>
+              </section>
 
-				<section data-auto-animate>
-					<h2>Presentación</h2>
-					<ul style="list-style-type:'😎'">
-						<li>Economista de la UN</li>
-							<ul style="list-style-type:'🐱‍👤'">
-								<li>Analista de datos</li>
-							</ul>
-							<ul style="list-style-type:'🐱‍👤'">
-								<li>Habilidades computacionales</li>
-								<li>Entusiasta de la programación</li>
-								<li>Me gusta enseñar y aprender</li>
-							</ul>
-					</ul>
-				</section>
+            <section>
+                <h2 style="font-size: 40px;">Floats o numeros decimales</h2>
+                <p style="text-align: justify;">Son variables de tipo numerica, con parte entera y decimal. </p>
+                <pre> <code data-trim data-noescape>
+                    a = 5.5
+                    b = 0.33
+                    c = "0.55"
+                </code></pre>
+            </section>
 
-				<section data-auto-animate data-transition="convex">
-					<h2 style="font-size:40px">¿Qué es la programación y qué es Python?</h2>
-				</section>
+            <section>
+                <h2 style="font-size: 40px;">Boolean o variables falso/verdadero</h2>
+                <p style="text-align: justify;">Son variables de tipo condicional, falso o verdadero. </p>
+                <pre> <code data-trim data-noescape>
+                    a = False
+                    b = True
+                    c = "True"
+                </code></pre>
+            </section>
 
-				<section data-auto-animate>
-					<h2 style="font-size:40px">¿Qué es la programación y qué es Python?</h2>
-					<p class="fragment" style="text-align: justify; font-size:40px">La programación es una herramienta para indicar instrucciones precisas por medio del lenguaje computacional a un sistema (como nuestra computadora) para que realice acciones especificas.</p>
-					<p class="fragment fade-in-then-out" style="text-align: justify; font-size:40px">Python es un lenguaje de programación utilizado para desarrollar todo tipo de instrucciones y aplicaciones. </p>
-					<p class="fragment highlight-blue" style="text-align: justify; font-size:40px"> "Si puedes imaginarlo, puedes programarlo"</p>
-					<p class="fragment fade-in-then-out" style="text-align: justify; font-size:40px">Programación ATS</p>
-				</section>
+            <section>
+                <h2 style="font-size: 40px;">Int o numeros enteros</h2>
+                <p style="text-align: justify;">Son variables de tipo numérico, solo con parte entera. </p>
+                <pre> <code data-trim data-noescape>
+                    a = 2
+                    b = 4
+                    c = 5
+                </code></pre>
+            </section>
 
-				<section data-auto-animate>
-					<h2 style="font-size:40px">Instalación y configuración del entorno de trabajo</h2>
-					<img style="width: 40%"src="https://s1.eestatic.com/2016/12/16/social/memes-humor-redes_sociales_178744040_23538138_1706x960.jpg" alt="Meme ramdom">
-					<br>
-					<a href="https://www.python.org/downloads/" target="_blank">Python |</a>
-					<a href="https://visualstudio.microsoft.com/es/downloads/" target="_blank">VS Code</a>
-				</section>
+            <section>
+                <h2 style="font-size: 40px;">Manejo de variables: Métodos</h2>
+                <p style="text-align: justify;">Son funciones que nos permiten manipular los diferentes tipos de variables de manera sencilla y eficaz. </p>
+                <pre> <code data-trim data-noescape>
+                    #Veamos algunos ejemplos: Strings: lowerCase, upperCase, Capital, etc
+                </code></pre>
+            </section>
 
-				<section data-auto-animate>
-					<h2>Mi primer "Hola Mundo" en Python</h2>
-					<pre> <code data-trim data-noescape>
-						a = "Hola Mundo"
-						print(a)
-					</code></pre>
-				</section>
-				
-				<section>
-					Presentación del repositorio
-					<br>
-					<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
-				</section>
-			</div>
-		</div>
+            <section>
+                <h2 style="font-size: 40px;">Estructura de datos</h2>
+                <p style="text-align: justify;"> Son los diferentes formatos que tiene Python para organizar los datos de manera estructurada: Listas, tuplas y diccionarios. </p>
+                <pre> <code data-trim data-noescape>
+                    #Listas: son arreglos que contienen filas y columnas indexadas.
+                    #Tuplas: son vectores inmutables que contienen valores.
+                    #Diccionarios: Son arreglos que contienen filas y 
+                    #columnas con un valor key asignado.
+                </code></pre>
+            </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+            <section>
+                <h2 style="font-size: 40px;">Operaciones básicas</h2>
+                <p style="text-align: justify;"> Operaciones aritméticas realizadas con python </p>
+                <pre> <code data-trim data-noescape>
+                    #Suma
+                    #Resta
+                    #Division
+                    #Multiplicacion
+                    #Potencia
+                    #Raiz
+                </code></pre>
+            </section>
+        </div>
+    </div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // Más información sobre la inicialización y la configuración:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            // Aprende sobre plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
 </html>
