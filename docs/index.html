@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sesión 2</title>
+    <title>Sesión 3</title>
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/night.css">
@@ -23,8 +23,8 @@
             <!-- Slide 1: Información General -->
             <section>
                 <h1 style="font-size: 50px;">Viernes de Código</h1>
-                <h1 style="font-size: 50px;">Sesión 2: Tipos de variables: Estructura de Datos y Operaciones Básicas en Python</h1>
-                <h1 style="font-size: 50px;">18/08/2023</h1>
+                <h1 style="font-size: 50px;">Sesión 3: Condicionales, Bucles y operadores</h1>
+                <h1 style="font-size: 50px;">25/08/2023</h1>
                 <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
                 <h1 style="font-size: 50px;">Universidad del Norte</h1>
                 <h1 style="font-size: 50px;">Departamento de Economía</h1>
@@ -37,11 +37,9 @@
                 <ul style="list-style-type:'👌😁'">
                     <li>Registro y Asistencia</li>
                     <li>Grupo de Discord</li>
-                    <li>Retroalimentación</li>
-                    <li>Variables básicas: String, float, boolean, int</li>
-                    <li>Manejo de variables: Métodos</li>
-                    <li>Estructura de Datos: listas, diccionarios, tuplas</li>
-                    <li>Operaciones básicas en python</li>
+                    <li>Operadores</li>
+                    <li>Ciclos</li>
+                    <li>Funciones</li>
                 </ul>
             </section>
 
@@ -68,93 +66,111 @@
                 <h2 style="font-size: 60px;">¿Qué hemos aprendido hasta ahora?</h2>
                 <ul style="list-style:'🤓';">
                     <li style="font-size: 40px;">Instalación y configuración del entorno de trabajo</li>
+                    <li style="font-size: 40px;">Tipos de varaible y algunas operaciones básicas</li>
                 </ul>
             </section>            
-
-            <!-- Slide 5: ¿Qué es la programación y qué es Python? -->
-            <section data-auto-animate>
-                <h2>Variables básicas</h2>
+            <section data-auto-animate data-transition="convex">
+                <h2>Operadores</h2>
                 <ul style="list-style-type:'😎'">
-                    <li>Tipos de variables</li>
-                        <ul style="list-style-type:'📖'">
-                            <li>Strings</li>
+                    <li>Tipos de operadores</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate>
+                <h2>Operadores</h2>
+                <ul style="list-style-type:'😎'">
+                    <li>Tipos de operadores & Condicionales</li>
+                        <ul style="list-style-type:'🐱‍👤'">
+                            <li>Operadores de asignación</li>
+                            <li>Operadores de comparación</li>
                         </ul>
-                        <ul style="list-style-type:'📖">
-                            <li>Booleans</li>
-                            <li>Ints</li>
-                            <li>Floats</li>
+                        <ul style="list-style-type:'🐱‍👤'">
+                            <li>Sentencias Condicionales</li>
+                            <li>Operadores lógicos</li>
+                            <li>Operadores de pertenencia</li>
                         </ul>
                 </ul>
             </section>
-            <section>
-                <h2 style="font-size: 40px;">String o Cadenas de Texto</h2>
-                <p style="text-align: justify;">Son variables de tipo alfabético, es decir, texto plano.</p>
-                <pre><code data-trim data-noescape>
-            a = "Hola Mundo :D"
-            b = "Esta clase es aburrida."
-            c = "esta clase <span class='red-bold'>no</span> es aburrida."
-                </code></pre>
-              </section>
 
             <section>
-                <h2 style="font-size: 40px;">Floats o numeros decimales</h2>
-                <p style="text-align: justify;">Son variables de tipo numerica, con parte entera y decimal. </p>
-                <pre> <code data-trim data-noescape>
-                    a = 5.5
-                    b = 0.33
-                    c = "0.55"
+                <h2 style="font-size: 40px;">Operadores de asignación</h2>
+                <p style="text-align: justify;">Son una manera efectiva de realizar una operación y almacenar su resultado en la variable inicial.</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6">
+                    # Operador de asignacion
+                    "=" # Asigna un valor a una variable.
+                    "+=" # asigna un valor de suma a una variable.
+                    "-=" # asigna un valor de resta a una variable.
+                    "*=" # asigna un valor de multiplicacion a una variable.
+                    "/=" # asigna un valor de division a una variable.
                 </code></pre>
             </section>
 
             <section>
-                <h2 style="font-size: 40px;">Boolean o variables falso/verdadero</h2>
-                <p style="text-align: justify;">Son variables de tipo condicional, falso o verdadero. </p>
-                <pre> <code data-trim data-noescape>
-                    a = False
-                    b = True
-                    c = "True"
+                <h2 style="font-size: 40px;">Operadores de comparación</h2>
+                <p style="text-align: justify;">Se utilizan para comparar dos o más valores.</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6|7">
+                    # Operador de comparación
+                    > # Mayor que:
+                    >= # Mayor o igual que:
+                    < # Menor que:
+                    <= #Menor o igual que:
+                    == # Igual: 
+                    != # Distinto:
                 </code></pre>
             </section>
 
             <section>
-                <h2 style="font-size: 40px;">Int o numeros enteros</h2>
-                <p style="text-align: justify;">Son variables de tipo numérico, solo con parte entera. </p>
-                <pre> <code data-trim data-noescape>
-                    a = 2
-                    b = 4
-                    c = 5
+                <h2 style="font-size: 40px;">Condicionales</h2>
+                <p style="text-align: justify;">Son sentencias para establecer caminos condicionales en python: que se ejecute el codigo DADO el cumplimiento de una condición establecida.</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4">
+                    # Condicionales
+                    if # Sentencia condicional "si"
+                    elif # Sentencia condicional "Altenartiva"
+                    else # Sentencia condicional "sino"
                 </code></pre>
             </section>
 
             <section>
-                <h2 style="font-size: 40px;">Manejo de variables: Métodos</h2>
-                <p style="text-align: justify;">Son funciones que nos permiten manipular los diferentes tipos de variables de manera sencilla y eficaz. </p>
-                <pre> <code data-trim data-noescape>
-                    #Veamos algunos ejemplos: Strings: lowerCase, upperCase, Capital, etc
+                <h2 style="font-size: 40px;">Operadores lógicos</h2>
+                <p style="text-align: justify;"> Permiten realizar operaciones lógicas. </p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-3|4-5|6-7">
+                    # Operadores lógicos
+                    "or" # Se evaluan dos opciones,
+                        # Si la primera es falsa, se escoge la segunda.
+                    "and" # Se evaluan dos opciones, 
+                        # solo se evalua la segunda si la primera es verdadera.
+                    "not" # Se evalua si el valor no esta,
+                            # si no esta es True, si si esta, es False.
                 </code></pre>
             </section>
 
             <section>
-                <h2 style="font-size: 40px;">Estructura de datos</h2>
-                <p style="text-align: justify;"> Son los diferentes formatos que tiene Python para organizar los datos de manera estructurada: Listas, tuplas y diccionarios. </p>
-                <pre> <code data-trim data-noescape>
-                    #Listas: son arreglos que contienen filas y columnas indexadas.
-                    #Tuplas: son vectores inmutables que contienen valores.
-                    #Diccionarios: Son arreglos que contienen filas y 
-                    #columnas con un valor key asignado.
+                <h2 style="font-size: 40px;">Operadores de pertenencia</h2>
+                <p style="text-align: justify;"> Permiten comprobar si un valor o variable se encuentra en una estructura de datos.</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3">
+                    # Operadores de pertenencia
+                    "in"
+                    "not in"
                 </code></pre>
             </section>
 
             <section>
-                <h2 style="font-size: 40px;">Operaciones básicas</h2>
-                <p style="text-align: justify;"> Operaciones aritméticas realizadas con python </p>
-                <pre> <code data-trim data-noescape>
-                    #Suma
-                    #Resta
-                    #Division
-                    #Multiplicacion
-                    #Potencia
-                    #Raiz
+                <h2 style="font-size: 40px;">Ciclos o Bucles</h2>
+                <p style="text-align: justify;"> Permiten repetir instrucciones tantas veces como queramos.</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3">
+                    # Bucles
+                    "while"
+                    "for"
+                </code></pre>
+            </section>
+
+            <section>
+                <h2 style="font-size: 40px;">Funciones</h2>
+                <p style="text-align: justify;"> Permiten crear una funcion propia en python para poder acceder a ella cuando queramos.</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3">
+                    # Funciones
+                    def funcionEgo():
+                        print("Soy el mejor programador")
                 </code></pre>
             </section>
         </div>
