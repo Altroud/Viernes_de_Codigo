@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sesión 3</title>
+    <title>Sesión 4 VC</title>
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/night.css">
@@ -23,8 +23,8 @@
             <!-- Slide 1: Información General -->
             <section>
                 <h1 style="font-size: 50px;">Viernes de Código</h1>
-                <h1 style="font-size: 50px;">Sesión 3: Condicionales, Bucles y operadores</h1>
-                <h1 style="font-size: 50px;">25/08/2023</h1>
+                <h1 style="font-size: 50px;">Sesión 4: Introducción a Pandas</h1>
+                <h1 style="font-size: 50px;">01/09/2023</h1>
                 <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
                 <h1 style="font-size: 50px;">Universidad del Norte</h1>
                 <h1 style="font-size: 50px;">Departamento de Economía</h1>
@@ -50,17 +50,9 @@
                 <br>
                 <a href="https://tananeo.uninorte.edu.co/marketplace/servicios/analisisdedatosphyton202330" target="_blank">Inscripción a Viernes de Código</a>
                 <br>
-                <br>
                 <a href="https://forms.gle/ahsPCGUb3EdLZuTq7" target="_blank">Asistencia a Viernes de Código</a>
-            </section>
-
-            <!-- Slide 4: Presentación - José David Mendoza Pérez -->
-            <section data-auto-animate>
-                <h2>Grupo de Discord</h2>
                 <br>
-                <ul style="list-style-type:'😊'">
-                    <a href="https://discord.gg/S9wuHF6g" target="_blank">Grupo de Discord</a>                 
-                </ul>
+                <a href="https://discord.gg/WURwFdwW" target="_blank">Grupo de Discord</a>        
             </section>
             <section>
                 <h2 style="font-size: 60px;">¿Qué hemos aprendido hasta ahora?</h2>
@@ -69,110 +61,49 @@
                     <li style="font-size: 40px;">Tipos de varaible y algunas operaciones básicas</li>
                 </ul>
             </section>            
-            <section data-auto-animate data-transition="convex">
-                <h2>Operadores</h2>
-                <ul style="list-style-type:'😎'">
-                    <li>Tipos de operadores</li>
-                </ul>
-            </section>
-
             <section data-auto-animate>
-                <h2>Operadores</h2>
-                <ul style="list-style-type:'😎'">
-                    <li>Tipos de operadores & Condicionales</li>
-                        <ul style="list-style-type:'🐱‍👤'">
-                            <li>Operadores de asignación</li>
-                            <li>Operadores de comparación</li>
-                        </ul>
-                        <ul style="list-style-type:'🐱‍👤'">
-                            <li>Sentencias Condicionales</li>
-                            <li>Operadores lógicos</li>
-                            <li>Operadores de pertenencia</li>
-                        </ul>
+                <h2>¿Que es pandas y jupyter?</h2>
+                <p style="font-size: 30px; text-align: justify;">Pandas es una libreria utilizada para el manejo de datos en python, y jupyter es el entorno de trabajo para usar comodamente dicha libreria.
+                    Es decir, toda la tarea de tratamiento de datos como filtrar, depurar, ajustar, creación de variables y demas las realizaremos usando pandas.
+                </p>
+            </section>
+
+            <section>
+                <h2 style="font-size: 40px;">Instalación e integración</h2>
+                <p style="text-align: justify;">Con los siguientes comandos instalaremos pandas y jupyter en nuestro vs-code</p>
+                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6">
+                    # pandas
+                    "pip install pandas" # Instalamos pandas.
+                    "pip install jupyter" # Instalamos jupyter.
+                    "pip install seaborn" # Instalamos seaborn.
+                    "pip install scikit-learn" # Instalamos scikit learn
+                    "pip install keras" # Instalamos keras
+                </code></pre>
+            </section>
+
+            <section>
+                <h2 style="font-size: 40px;">¿Que es un dataframe?</h2>
+                <p style="text-align: justify;">Es un objeto con estructura de base de datos: las filas se llaman registros o entradas y las columnas se llaman campos.</p>
+            </section>
+
+            <section>
+                <h2 style="font-size: 40px;">numpy</h2>
+                <p style="text-align: justify;">NumPy es una librería de Python especializada en el cálculo numérico y el análisis de datos, especialmente para un gran volumen de datos.
+                    Incorpora una nueva clase de objetos llamados arrays que permite representar colecciones de datos de un mismo tipo en varias dimensiones, y funciones muy eficientes para su manipulación.</p>
+            </section>
+
+            <section data-auto-animate data-transition="convex">
+                <h1 style="font-size:60px">Librerias</h1>
+                <ul style="list-style-type:'🎮'">
+                    <li>Deep learning</li>
+                    <li>Machine learning</li>
+                    <li>Cálculo numérico</li>
+                    <li>Visualización</li>
+                    <li>Inteligencia artificial explicable</li>
+                    <li>Procesamiento de lenguaje natural</li>
                 </ul>
             </section>
 
-            <section>
-                <h2 style="font-size: 40px;">Operadores de asignación</h2>
-                <p style="text-align: justify;">Son una manera efectiva de realizar una operación y almacenar su resultado en la variable inicial.</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6">
-                    # Operador de asignacion
-                    "=" # Asigna un valor a una variable.
-                    "+=" # asigna un valor de suma a una variable.
-                    "-=" # asigna un valor de resta a una variable.
-                    "*=" # asigna un valor de multiplicacion a una variable.
-                    "/=" # asigna un valor de division a una variable.
-                </code></pre>
-            </section>
-
-            <section>
-                <h2 style="font-size: 40px;">Operadores de comparación</h2>
-                <p style="text-align: justify;">Se utilizan para comparar dos o más valores.</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6|7">
-                    # Operador de comparación
-                    > # Mayor que:
-                    >= # Mayor o igual que:
-                    < # Menor que:
-                    <= #Menor o igual que:
-                    == # Igual: 
-                    != # Distinto:
-                </code></pre>
-            </section>
-
-            <section>
-                <h2 style="font-size: 40px;">Condicionales</h2>
-                <p style="text-align: justify;">Son sentencias para establecer caminos condicionales en python: que se ejecute el codigo DADO el cumplimiento de una condición establecida.</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4">
-                    # Condicionales
-                    if # Sentencia condicional "si"
-                    elif # Sentencia condicional "Altenartiva"
-                    else # Sentencia condicional "sino"
-                </code></pre>
-            </section>
-
-            <section>
-                <h2 style="font-size: 40px;">Operadores lógicos</h2>
-                <p style="text-align: justify;"> Permiten realizar operaciones lógicas. </p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-3|4-5|6-7">
-                    # Operadores lógicos
-                    "or" # Se evaluan dos opciones,
-                        # Si la primera es falsa, se escoge la segunda.
-                    "and" # Se evaluan dos opciones, 
-                        # solo se evalua la segunda si la primera es verdadera.
-                    "not" # Se evalua si el valor no esta,
-                            # si no esta es True, si si esta, es False.
-                </code></pre>
-            </section>
-
-            <section>
-                <h2 style="font-size: 40px;">Operadores de pertenencia</h2>
-                <p style="text-align: justify;"> Permiten comprobar si un valor o variable se encuentra en una estructura de datos.</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3">
-                    # Operadores de pertenencia
-                    "in"
-                    "not in"
-                </code></pre>
-            </section>
-
-            <section>
-                <h2 style="font-size: 40px;">Ciclos o Bucles</h2>
-                <p style="text-align: justify;"> Permiten repetir instrucciones tantas veces como queramos.</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3">
-                    # Bucles
-                    "while"
-                    "for"
-                </code></pre>
-            </section>
-
-            <section>
-                <h2 style="font-size: 40px;">Funciones</h2>
-                <p style="text-align: justify;"> Permiten crear una funcion propia en python para poder acceder a ella cuando queramos.</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3">
-                    # Funciones
-                    def funcionEgo():
-                        print("Soy el mejor programador")
-                </code></pre>
-            </section>
         </div>
     </div>
 
@@ -181,12 +112,13 @@
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script>
-        // Más información sobre la inicialización y la configuración:
+        // More info about initialization & config:
         // - https://revealjs.com/initialization/
         // - https://revealjs.com/config/
         Reveal.initialize({
             hash: true,
-            // Aprende sobre plugins: https://revealjs.com/plugins/
+
+            // Learn about plugins: https://revealjs.com/plugins/
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
         });
     </script>
