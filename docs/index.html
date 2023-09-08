@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sesión 4 VC</title>
+    <title>Sesión 5 VC</title>
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/night.css">
@@ -23,8 +23,8 @@
             <!-- Slide 1: Información General -->
             <section>
                 <h1 style="font-size: 50px;">Viernes de Código</h1>
-                <h1 style="font-size: 50px;">Sesión 4: Introducción a Pandas</h1>
-                <h1 style="font-size: 50px;">01/09/2023</h1>
+                <h1 style="font-size: 50px;">Sesión 5: Manejo de Dataframes I</h1>
+                <h1 style="font-size: 50px;">08/09/2023</h1>
                 <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
                 <h1 style="font-size: 50px;">Universidad del Norte</h1>
                 <h1 style="font-size: 50px;">Departamento de Economía</h1>
@@ -34,22 +34,18 @@
 
             <section data-auto-animate data-transition="convex">
                 <h1 style="font-size:60px">Programación</h1>
-                <ul style="list-style-type:'👌'">
-                    <li>Registro y Asistencia</li>
-                    <li>Grupo de Discord</li>
-                    <li>Operadores</li>
-                    <li>Ciclos</li>
-                    <li>Funciones</li>
+                <ul style="list-style-type:'UwU'">
+                    <li>Asistencia</li>
+                    <li>Importar Dataframes</li>
+                    <li>Diferentes formas de mostrar el dataframe</li>
+                    <li>Atributos, funciones y metodos</li>
                 </ul>
             </section>
 
             <!-- Slide 2: Registro y Asistencia -->
             
             <section>
-                <h1 style="font-size: 50px;">Registro y Asistencia</h1>
-                <br>
-                <a href="https://tananeo.uninorte.edu.co/marketplace/servicios/analisisdedatosphyton202330" target="_blank">Inscripción a Viernes de Código</a>
-                <br>
+                <h1 style="font-size: 50px;">Asistencia</h1>
                 <a href="https://forms.gle/ahsPCGUb3EdLZuTq7" target="_blank">Asistencia a Viernes de Código</a>
                 <br>
                 <a href="https://discord.gg/WURwFdwW" target="_blank">Grupo de Discord</a>        
@@ -60,68 +56,88 @@
                     <li style="font-size: 40px;">Instalación y configuración del entorno de trabajo</li>
                     <li style="font-size: 40px;">Tipos de variable y algunas operaciones básicas</li>
                     <li style="font-size: 40px;">Operadores lógicos y algunos ciclos</li>
+                    <li style="font-size: 40px;">Introducción a Pandas</li>
                 </ul>
             </section>            
             <section data-auto-animate>
-                <h2>¿Que es pandas y jupyter?</h2>
-                <p style="font-size: 30px; text-align: justify;">Pandas es una libreria utilizada para el manejo de datos en python, y jupyter es el entorno de trabajo para usar comodamente dicha libreria.
-                    Es decir, toda la tarea de tratamiento de datos como filtrar, depurar, ajustar, creación de variables y demas las realizaremos usando pandas.
-                </p>
-            </section>
+				<section data-auto-animate data-transition="convex">
+					<h2>Importar Dataframes</h2>
+					<p style="font-size: 30px; text-align: justify;">Existen varios formatos y varias maneras para trabajar con dataframes en pandas. 
+						Los formatos mas utilizados son archivos de excel, csv, dta.
+						El metodo para importar dichos archivos cambiara dependiendo del tipo.
+						Veamos algunos ejemplos:
+						<pre> <code data-trim data-noescape data-line-numbers="">
+							# Importar
+							"pd.read_excel('base_de_datos.xlsx')" # excel
+							"pd.read_csv('datos.csv')" # csv
+							"pd.read_stata('datos.dta')" #dta
+						</code></pre>
+					</p>
+				</section>
 
-            <section>
-                <h2 style="font-size: 40px;">Instalación e integración</h2>
-                <p style="text-align: justify;">Con los siguientes comandos instalaremos pandas y jupyter en nuestro vs-code</p>
-                <pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6">
-                    # pandas
-                    "pip install pandas" # Instalamos pandas.
-                    "pip install jupyter" # Instalamos jupyter.
-                    "pip install seaborn" # Instalamos seaborn.
-                    "pip install scikit-learn" # Instalamos scikit learn
-                    "pip install keras" # Instalamos keras
-                </code></pre>
-            </section>
+				<section data-auto-animate>
+					<h2>Diferentes formas de mostrar el DataFrame</h2>
+					<p style="font-size: 30px; text-align: justify;">En pandas dependiendo de la necesidad que tengamos podemos mostrar de diferentes formas el dataframe; un resumen, primeros 5 datos, entre otras.
+					</p>
+					<pre> <code data-trim data-noescape data-line-numbers="">
+						# metodos para hacerlo
+						"head()" # 5 primeros datos.
+						"tail()" # 5 ultimos datos.
+					</code></pre>
+				</section>
 
-            <section>
-                <h2 style="font-size: 40px;">¿Que es un dataframe?</h2>
-                <p style="text-align: justify;">Es un objeto con estructura de base de datos: las filas se llaman registros o entradas y las columnas se llaman campos.</p>
-            </section>
+				<section>
+					<h2 style="font-size: 40px;">Selección de columnas</h2>
+					<p style="text-align: justify;">Podemos seleccionar con que columnas queremos realizar nuestro análisis:</p>
+					<pre> <code data-trim data-noescape data-line-numbers="">
+						# Seleccion de columnas
+						"[metodo corchetes]" # Corchetes
+						"." # Metodo del punto.
 
-            <section>
-                <h2 style="font-size: 40px;">numpy</h2>
-                <p style="text-align: justify;">NumPy es una librería de Python especializada en el cálculo numérico y el análisis de datos, especialmente para un gran volumen de datos.
-                    Incorpora una nueva clase de objetos llamados arrays que permite representar colecciones de datos de un mismo tipo en varias dimensiones, y funciones muy eficientes para su manipulación.</p>
-            </section>
+						# ¿Podemos seleccionar mas de una columna?
+					</code></pre>
+				</section>
 
-            <section data-auto-animate data-transition="convex">
-                <h1 style="font-size:60px">Librerias</h1>
-                <ul style="list-style-type:'🎮'">
-                    <li>Deep learning</li>
-                    <li>Machine learning</li>
-                    <li>Cálculo numérico</li>
-                    <li>Visualización</li>
-                    <li>Inteligencia artificial explicable</li>
-                    <li>Procesamiento de lenguaje natural</li>
-                </ul>
-            </section>
+				<section>
+					<h2 style="font-size: 30px;">Atributos, funciones y metodos</h2>
+					<p style="text-align: justify;font-size: 20px;">Los atributos son las caracteristicas de una base de datos o sus propiedades estructurales: que tipo de datos contiene, sus dimensiones, etc.
+					Las funciones y metodos son algoritmos que podemos crear o manipular para realizar un analisis de datos efectivo.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="">
+						# Atributos
+						"shape" # Dimensiones del dataframe
+						"index" # Comportamiento del dataframe
+						"columns" # obtener el nombre de las columnas 
+						"dtype" #obtener el tipo de datos de las variables
 
-        </div>
-    </div>
+						# metodos
+						"info()" #resumen del dataframe
+						"describe()" #summary del dataframe
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-        // More info about initialization & config:
-        // - https://revealjs.com/initialization/
-        // - https://revealjs.com/config/
-        Reveal.initialize({
-            hash: true,
+						#Funciones
+						"len" #numero de filas
+						"max" #maximo index
+						"min" #minimo index
+						"type" #tipo de data
+						"round" #redondear valores del dataframe
+					</code></pre>
+				</section>
+			</div>
+		</div>
 
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-        });
-    </script>
-</body>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
