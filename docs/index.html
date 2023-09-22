@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sesión 6 VC</title>
+    <title>Sesión 7 VC</title>
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/night.css">
@@ -23,7 +23,7 @@
             <!-- Slide 1: Información General -->
             <section>
                 <h1 style="font-size: 50px;">Viernes de Código</h1>
-                <h1 style="font-size: 50px;">Sesión 6: Manejo de Dataframes II</h1>
+                <h1 style="font-size: 50px;">Sesión 7: Manejo de Dataframes II</h1>
                 <h1 style="font-size: 50px;">15/09/2023</h1>
                 <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
                 <h1 style="font-size: 50px;">Universidad del Norte</h1>
@@ -36,80 +36,63 @@
                 <h1 style="font-size:60px">Programación</h1>
                 <ul style="list-style-type:'😎 '">
                     <li>Asistencia</li>
-					<li>Agregar nueva columna</li>
-					<li>Operaciones en columnas y filas</li>
-					<li>Ordenar DataFrame</li>
-					<li>Convertir de formato long-wide</li>
+                    <li>Búsqueda y descarga de bases de datos</li>
+                    <li>Data Viewer</li>
+                    <li>Filtros, tratamientos y estadísticas básicas de la base de datos</li>
+                    <li>Grafico de lineas</li>
+                    <li>Exportar los datos luego de tratarlos</li>
                 </ul>
             </section>
-
-            <!-- Slide 2: Registro y Asistencia -->
-            
-            <section>
-                <h1 style="font-size: 50px;">Asistencia</h1>
-                <a href="https://forms.gle/ahsPCGUb3EdLZuTq7" target="_blank">Asistencia a Viernes de Código</a>
-                <br>
-                <a href="https://github.com/Altroud/Viernes_de_Codigo/tree/main/C%C3%B3digos%20Sesiones" target="_blank">Material</a>        
+            <section data-auto-animate data-transition="convex">
+                <h2>Busqueda y descarga de bases de datos</h2>
+                <p style="font-size: 30px; text-align: justify;">
+                    Tenemos dos fuentes importantes de bases de datos como economistas: las bases de datos del DANE, y las bases de datos del Banco Mundial.
+                    <br>
+                    <a href="https://www.dane.gov.co/index.php/estadisticas-por-tema">DANE</a>
+                    <br>
+                    <a href="https://data.worldbank.org/indicator">World Data Bank</a>
+                    <br>
+                    <a href="https://www.uninorte.edu.co/web/ocsa/repositorio-de-datos">OCSA</a>
+                </p>
             </section>
+
+            <section data-auto-animate>
+                <h2>Data Viewer</h2>
+                <p style="font-size: 30px; text-align: justify;">
+                    El Data Viewer es una herramienta integrada con jupyter para ayudarnos a echarle un vistazo rapido a nuestra base de datos, encontrar valores, y dicho de otra manera es la ventana visual de nuestra base de datos.
+                </p>
+            </section>
+
             <section>
-                <h2 style="font-size: 60px;">¿Qué hemos aprendido hasta ahora?</h2>
-                <ul style="list-style:'🤓 ';">
-                    <li style="font-size: 40px;">Instalación y configuración del entorno de trabajo</li>
-                    <li style="font-size: 40px;">Tipos de variable y algunas operaciones básicas</li>
-                    <li style="font-size: 40px;">Operadores lógicos y algunos ciclos</li>
-                    <li style="font-size: 40px;">Introducción a Pandas</li>
-					<li style="font-size: 40px;">Manejo básico de data frames (estructuras de datos de 2 dimensiones)</li>
-                </ul>
-            </section>            
-			<section data-auto-animate data-transition="convex">
-				<h2>Agregar columnas</h2>
-				<p style="font-size: 30px; text-align: justify;">En excel es trivial agregar una nueva columna, puesto que la hoja de cálculo viene con dimensiones especificadas y es el usuario quien decide que espacios utilizara. En cambio en Python hay diferentes parametros a considerar para agregar una nueva columna:
-					Dependiendo de nuestra necesidad podemos crear una columna de multiples formas:
-					<pre> <code data-trim data-noescape data-line-numbers="">
-						# Agregar columna
-						"Valor constante" 
-						"Valores de un array" 
-					</code></pre>
-				</p>
-			</section>
+                <h2 style="font-size: 40px;">Filtro, tratamiento y estadísticas básicas de la base de datos</h2>
+                <p style="text-align: justify;">1. Precios mayoristas <br> 2. Inflación</p>
+            </section>
 
-			<section data-auto-animate>
-				<h2>Operaciones en columnas y filas</h2>
-				<p style="font-size: 30px; text-align: justify;">
-					Realizar operaciones entre filas o columnas es el tipo de operación mas básico que se puede realizar y python ofrece muchos metodos para esto:
-					Recordemos que las operaciones entre filas y columnas son las más esenciales.
-				</p>
-			</section>
+            <section>
+                <h2 >Gráficos básicos</h2>
+            </section>
 
-			<section>
-				<h2 style="font-size: 40px;">Ordenar DataFrames</h2>
-				<p style="text-align: justify;">Podemos ordenar el DataFrame de la manera que mas nos convenga:</p>
-			</section>
+            <section>
+                <h2>Exportar nuestros datos</h2>
+            </section>
 
-			<section>
-				<h2 style="font-size: 40px;">Formato Long - Wide</h2>
-				<p style="text-align: justify;">Existen dos tipos de formatos para las bases de datos:</p>
-				<img src="https://qph.cf2.quoracdn.net/main-qimg-dd0dabfa8abd51156906518c0e04f684-pjlq" alt="">
-				<p style="text-align: justify;">Con pivot, puedes convertir datos en formato "long" a "wide". Es una herramienta valiosa para la reorganización de datos según los requisitos específicos de tu análisis o visualización.</p>
-			</section>
+        </div>
+    </div>
 
-		</div>
-	</div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-		});
-	</script>
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
 </body>
 </html>
