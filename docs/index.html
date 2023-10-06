@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sesión 8 VC</title>
+    <title>Sesión 9 VC</title>
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/night.css">
@@ -23,8 +23,8 @@
             <!-- Slide 1: Información General -->
             <section>
                 <h1 style="font-size: 50px;">Viernes de Código</h1>
-                <h1 style="font-size: 50px;">Sesión 8: Tratamiento de Bases de Datos II</h1>
-                <h1 style="font-size: 50px;">29/09/2023</h1>
+                <h1 style="font-size: 50px;">Sesión 9: Regresión Lineal y Visualización de Datos</h1>
+                <h1 style="font-size: 50px;">6/10/2023</h1>
                 <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
                 <h1 style="font-size: 50px;">Universidad del Norte</h1>
                 <h1 style="font-size: 50px;">Departamento de Economía</h1>
@@ -33,12 +33,10 @@
                 <h1 style="font-size:60px">Programación</h1>
                 <ul style="list-style-type:'😎 '">
                     <li>Asistencia y registro</li>
-                    <li>Estrategias para depurar bases de datos</li>
-                    <li>Diccionarios de Datos</li>
-                    <li>Filtros, tratamientos y estadisticas básicas de la base de datos</li>
-                    <li>Grafico descriptivos</li>
-                    <li>Exportar los datos luego de tratados</li>
-                    <li>Generar Documento de Trabajo</li>
+                    <li>Regresión Simple con StatsModels</li>
+                    <li>Regresión Múltiple con StatsModels</li>
+                    <li>Regresión Múltiple con Scikit-learn</li>
+                    <li>El Arte de Graficar</li>
                 </ul>
             </section>
             <section>
@@ -50,82 +48,48 @@
                 </p>      
             </section>
             <section data-auto-animate data-transition="convex">
-                <h2>Estrategias para depurar bases de datos</h2>
-                <p style="font-size: 30px; text-align: justify;">
-                    1. Identificar los errores.
-                    <br>
-                    2. Mirar si tenemos datos duplicados.
-                    <br>
-                    3. Recodificar variables segun nuestras necesidades.
-                    <br>
-                    4. Tratamiento de los datos.
-                    <br>
-                    5. Exportar resultados.
-                </p>
-            </section>
-            <section data-auto-animate>
-                <h2>Diccionario de Datos</h2>
-                <p style="font-size: 30px; text-align: justify;">
-                    El diccionario de datos es una herramienta utilizada en bases de datos que por su naturaleza trabaja con muchas variables.
-                    <br>
-                    Es útil aprender a manejar con soltura este tipo de herramientas, pues nos ahorran tiempo y permiten comprender cualquier estructura de cualquier base de datos.
-                    <br>
-                    NOTA: NO todas las bases de datos van a trabajar con diccionarios de Datos, pero es probable que entre mas compleja sea, el uso de un diccionario puede ser muy útil.
-                </p>
-            </section>
-            <section data-auto-animate>
-                <h2>Diccionario de Datos de nuestra base de datos</h2>
-                <p style="font-size: 30px; text-align: justify;">
-                    AC20 = ACT_Composition_Score
-                    <br>
-                    AC21 = SAT_Total_Score
-                    <br>
-                    AC22 = Parental level of education
-                    <br>
-                    AC23 = Parental Income
-                    <br>
-                    AC24 = High School GPA
-                    <br>
-                    AC25 = Collegue GPA
-                    <br>
-                    AC26 = Years to graduate
-                </p>
-            </section>
-            <section>
-                <h2 style="font-size: 40px;">Filtro, tratamiento y estadisticas basicas de la base de datos</h2>
-                <p style="text-align: justify;"></p>
-            </section>
-            <section>
-                <h2 >Gráficos descriptivos</h2>
-                <p style="text-align:left;justify-content:left;">
-                    1. Histogramas.
-                    <br>
-                    2. Graficos de dispersión.
-                </p>
-            </section>
-            <section>
-                <h2>Exportar nuestros datos</h2>
-            </section>
-            <section>
-                <h2>Generar el documento de trabajo</h2>
-                <p>Utilizaremos Markdown para generar un documento de trabajo presentable utilizando el mismo jupyter.</p>
-            </section>
-        </div>
-    </div>
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-        // More info about initialization & config:
-        // - https://revealjs.com/initialization/
-        // - https://revealjs.com/config/
-        Reveal.initialize({
-            hash: true,
+                <section data-auto-animate data-transition="convex">
+					<h2>Regresión Simple con StatsModels</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						<ul style="list-style: '👌';text-align: justify;">
+							<li>¿Qué es una Regresión?</li>
+							<li>Tipos de Regresión</li>
+							<li>Construcción del Modelo</li>
+							<li>Graficando el Modelo</li>
+						</ul>
+					</p>
+				</section>
 
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-        });
-    </script>
-</body>
+				<section data-auto-animate>
+					<h2>Regresión Múltiple con StatsModels</h2>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Regresión Múltiple con Scikit-learn</h2>
+				</section>
+
+				<section>
+					<h2>El Arte de Graficar</h2>
+					<p><a href="https://seaborn.pydata.org/examples/index.html" target="_blank">Galería</a></p>
+				</section>
+			</div>
+		</div>
+		
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
