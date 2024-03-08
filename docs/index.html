@@ -18,9 +18,10 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<h1 style="font-size: 50px;">Sesión 2: Tipos de Datos y Estructuras de Control I</h1>
 					<h1 style="font-size: 50px;">Viernes de Código</h1>
 					<br>		
-					<h1 style="font-size: 50px;">01/03/2024</h1>
+					<h1 style="font-size: 50px;">08/03/2024</h1>
 					<br>
 					<h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
 					<br>
@@ -33,12 +34,9 @@
 					<h1 style="font-size:60px">Programación</h1>
 					<ul style="list-style-type:'🤩'">
 						<Li>Asistencia</Li>
-						<li>Presentación</li>
-						<li>¿Qué es la programación y que es Python?</li>
-						<li>Instalación y configuración del entorno de trabajo</li>
-						<li>Fundamentos de Visual Studio Code</li>
-						<li>Mi Primer Hola Mundo en Python</li>
-						<li>Presentación del repositorio de Git-Hub</li>
+						<li>Tipos de datos: Cadenas de Texto, Enteros, Decimales, Boolean</li>
+						<li>Estructuras de Control: While, For, If, If-Else</li>
+						<li>Ejercicios prácticos</li>
 					</ul>
 				</section>
 				<section>
@@ -47,56 +45,73 @@
 				</section>
 
 				<section data-auto-animate data-transition="convex">
-					<h2>Presentación</h2>
-					<ul style="list-style-type:'😎'">
-						<li>Economista de la UN</li>
-					</ul>
+					<h2>Tipos de datos: Cadenas de Texto, Enteros, Decimales, Boolean</h2>
+					<p>Las <em>cadenas de texto</em>, comúnmente conocidas como <em>strings</em> en muchos lenguajes de programación, son una secuencia de caracteres, como letras, números, y símbolos, que se utilizan para representar texto. En la mayoría de los lenguajes de programación, las cadenas de texto se pueden crear utilizando comillas simples (''), comillas dobles ("") o triples (''' o """) dependiendo de la sintaxis específica del lenguaje.</p>
+					<p>Por ejemplo, en Python, una cadena de texto se puede definir de la siguiente manera:</p>
+					<pre><code>cadena = "Hola, mundo!"</code></pre>
+					<p>Las cadenas de texto son una parte fundamental de la mayoría de las aplicaciones informáticas, ya que se utilizan para mostrar mensajes al usuario, almacenar información de texto, interactuar con bases de datos, procesar archivos y mucho más.</p>
 				</section>
-
-				<section data-auto-animate>
-					<h2>Presentación</h2>
-					<ul style="list-style-type:'😎'">
-						<li>Economista de la UN</li>
-							<ul style="list-style-type:'🐱‍👤'">
-								<li>Analista de datos</li>
-							</ul>
-							<ul style="list-style-type:'🐱‍👤'">
-								<li>Habilidades computacionales</li>
-								<li>Entusiasta de la programación</li>
-								<li>Me gusta enseñar y aprender</li>
-							</ul>
-					</ul>
-				</section>
-
 				<section data-auto-animate data-transition="convex">
-					<h2 style="font-size:40px">¿Qué es la programación y qué es Python?</h2>
+					<h2>Tipos de datos: Enteros</h2>
+					<p>Los <em>enteros</em> son números sin parte fraccionaria, es decir, números que no tienen decimales. Pueden ser positivos, negativos o cero. En la mayoría de los lenguajes de programación, los enteros se utilizan para representar números enteros, como conteos, identificadores, índices de matrices y más.</p>
+					<p>Por ejemplo, en Python, los enteros se pueden definir de la siguiente manera:</p>
+					<pre><code>numero_entero = 42</code></pre>
+					<p>Los enteros son uno de los tipos de datos más comunes y fundamentales en la programación.</p>
 				</section>
-
-				<section data-auto-animate>
-					<h2 style="font-size:40px">¿Qué es la programación y qué es Python?</h2>
-					<p class="fragment" style="text-align: justify; font-size:40px">La programación es una herramienta para indicar instrucciones precisas por medio del lenguaje computacional a un sistema (como nuestra computadora) para que realice acciones especificas.</p>
-					<p class="fragment fade-in-then-out" style="text-align: justify; font-size:40px">Python es un lenguaje de programación utilizado para desarrollar todo tipo de instrucciones y aplicaciones. </p>
-					<p class="fragment highlight-blue" style="text-align: justify; font-size:40px"> "Si puedes imaginarlo, puedes programarlo"</p>
-					<p class="fragment fade-in-then-out" style="text-align: justify; font-size:40px">Programación ATS</p>
+				<section data-auto-animate data-transition="convex">
+					<h2>Tipos de datos: Decimales</h2>
+					<p>Los <em>decimales</em>, también conocidos como números de punto flotante o <em>floats</em> en muchos lenguajes de programación, son números que pueden tener una parte fraccionaria. Estos números se utilizan para representar cantidades que pueden tener valores fraccionarios o decimales.</p>
+					<p>Por ejemplo, en Python, los decimales se pueden definir de la siguiente manera:</p>
+					<pre><code>numero_decimal = 3.14</code></pre>
+					<p>Los números decimales son importantes para realizar cálculos precisos que involucran valores fraccionarios o decimales.</p>
 				</section>
-
-				<section data-auto-animate>
-					<h2 style="font-size:40px">Instalación y configuración del entorno de trabajo</h2>
-					<img style="width: 40%"src="https://media0.giphy.com/media/LoCDk7fecj2dwCtSB3/giphy.gif?cid=ecf05e47ih4ifoc7ur61765dfqnwsdjpzzebmurkcj8zn7si&rid=giphy.gif&ct=g" alt="Meme ramdom">
-					<br>
-					<a href="https://www.python.org/downloads/" target="_blank">Python |</a>
-					<a href="https://visualstudio.microsoft.com/es/downloads/" target="_blank">VS Code</a>
+				<section data-auto-animate data-transition="convex">
+					<h2>Tipos de datos: Boolean</h2>
+					<p>Los <em>booleanos</em> son un tipo de dato que representa un valor de verdad, es decir, verdadero o falso. En la mayoría de los lenguajes de programación, los booleanos se utilizan para realizar operaciones lógicas y de control de flujo, como la evaluación de condiciones y la toma de decisiones.</p>
+					<p>Por ejemplo, en Python, los booleanos se pueden definir de la siguiente manera:</p>
+					<pre><code>booleano = True</code></pre>
+					<p>Los booleanos son esenciales para la lógica de programación y se utilizan ampliamente en la toma de decisiones dentro de los programas informáticos.</p>
 				</section>
-
-				<section data-auto-animate>
-					<h2>Mi primer "Hola Mundo" en Python</h2>
-					<pre> <code data-trim data-noescape>
-						a = "Hola Mundo"
-						print(a)
-					</code></pre>
+				<section data-auto-animate data-transition="convex">
+					<h2>Estructuras de Control: while</h2>
+					<p>La estructura de control <code>while</code> se utiliza para repetir un bloque de código mientras una condición dada sea verdadera. En cada iteración del bucle, se evalúa la condición y, si es verdadera, se ejecuta el bloque de código.</p>
+					<p>Por ejemplo, en Python, un bucle <code>while</code> se puede definir de la siguiente manera:</p>
+					<pre><code>contador = 0
+				while contador &lt; 5:
+					print(contador)
+					contador += 1</code></pre>
+					<p>Este bucle imprimirá los números del 0 al 4, ya que la condición <code>contador &lt; 5</code> es verdadera durante las primeras cinco iteraciones.</p>
+				</section>
+				<section data-auto-animate data-transition="convex">
+					<h2>Estructuras de Control: for</h2>
+					<p>La estructura de control <code>for</code> se utiliza para iterar sobre una secuencia (como una lista, tupla, rango, etc.) y ejecutar un bloque de código una vez para cada elemento de la secuencia.</p>
+					<p>Por ejemplo, en Python, un bucle <code>for</code> se puede definir de la siguiente manera:</p>
+					<pre><code>for i in range(5):
+					print(i)</code></pre>
+					<p>Este bucle imprimirá los números del 0 al 4, ya que la función <code>range(5)</code> genera una secuencia de números del 0 al 4.</p>
+				</section>
+				<section data-auto-animate data-transition="convex">
+					<h2>Estructuras de Control: if</h2>
+					<p>La estructura de control <code>if</code> se utiliza para ejecutar un bloque de código si una condición dada es verdadera. Si la condición es falsa, el bloque de código dentro del <code>if</code> no se ejecuta.</p>
+					<p>Por ejemplo, en Python, una declaración <code>if</code> se puede definir de la siguiente manera:</p>
+					<pre><code>numero = 10
+				if numero &gt; 0:
+					print("El número es positivo")</code></pre>
+					<p>Este bloque de código imprimirá "El número es positivo" si la variable <code>numero</code> es mayor que cero.</p>
+				</section>
+				<section data-auto-animate data-transition="convex">
+					<h2>Estructuras de Control: if-else</h2>
+					<p>La estructura de control <code>if-else</code> se utiliza para ejecutar un bloque de código si una condición dada es verdadera, y otro bloque de código si la condición es falsa.</p>
+					<p>Por ejemplo, en Python, una declaración <code>if-else</code> se puede definir de la siguiente manera:</p>
+					<pre><code>numero = -5
+				if numero &gt; 0:
+					print("El número es positivo")
+				else:
+					print("El número es negativo o cero")</code></pre>
+					<p>Este bloque de código imprimirá "El número es positivo" si la variable <code>numero</code> es mayor que cero, de lo contrario, imprimirá "El número es negativo o cero".</p>
 				</section>
 				<section>
-					Presentación del repositorio
+					<h1>Ejercicios prácticos</h1>
 					<br>
 					<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
 				</section>
