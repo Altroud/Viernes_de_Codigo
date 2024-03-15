@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Sesión 1</title>
+		<title>Sesión 3</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,10 +18,11 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1 style="font-size: 50px;">Sesión 2: Tipos de Datos y Estructuras de Control I</h1>
+					<h1 style="font-size: 50px;">Sesión 3: Tipos de Datos y Estructuras de Control I</h1>
+					<br>
 					<h1 style="font-size: 50px;">Viernes de Código</h1>
 					<br>		
-					<h1 style="font-size: 50px;">08/03/2024</h1>
+					<h1 style="font-size: 50px;">15/03/2024</h1>
 					<br>
 					<h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
 					<br>
@@ -29,83 +30,66 @@
 					<br>
 					<h1 style="font-size: 50px;">Departamento de Economía</h1>
 				</section>
-
 				<section data-auto-animate data-transition="convex">
 					<h1 style="font-size:60px">Programación</h1>
 					<ul style="list-style-type:'🤩'">
 						<Li>Asistencia</Li>
-						<li>Tipos de datos: Cadenas de Texto, Enteros, Decimales, Boolean</li>
-						<li>Estructuras de Control: While, For, If, If-Else</li>
-						<li>Ejercicios prácticos</li>
+						<li>Repaso Rápido de Listas, Tuplas y Diccionarios</li>
+						<li>Ejemplos y ejercicios prácticos</li>
 					</ul>
 				</section>
 				<section>
-					<h1 style="font-size:60px">Asistencia</h1>
-					<a href="https://docs.google.com/forms/d/1a_jfSh_3V3ufLgA6UOOXqkumW4nlJjnwxojnMVvaWDE/viewform?edit_requested=true" target="_blank">Asistencia al curso</a>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Cadenas de Texto</h2>
-					<p>Las <em>cadenas de texto</em>, comúnmente conocidas como <em>strings</em> en muchos lenguajes de programación, son una secuencia de caracteres, como letras, números, y símbolos, que se utilizan para representar texto. En la mayoría de los lenguajes de programación, las cadenas de texto se pueden crear utilizando comillas simples (''), comillas dobles ("") o triples (''' o """) dependiendo de la sintaxis específica del lenguaje.</p>
-					<p>Por ejemplo, en Python, una cadena de texto se puede definir de la siguiente manera:</p>
-					<pre><code>cadena = "Hola, mundo!"</code></pre>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Enteros</h2>
-					<p>Los <em>enteros</em> son números sin parte fraccionaria, es decir, números que no tienen decimales. Pueden ser positivos, negativos o cero.</p>
-					<p>Por ejemplo, en Python, los enteros se pueden definir de la siguiente manera:</p>
-					<pre><code>numero_entero = 42</code></pre>
-					<p>Los enteros son uno de los tipos de datos más comunes y fundamentales en la programación.</p>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Decimales</h2>
-					<p>Los <em>decimales</em>, también conocidos como números de punto flotante o <em>floats</em> en muchos lenguajes de programación, son números que pueden tener una parte fraccionaria.</p>
-					<p>Por ejemplo, en Python, los decimales se pueden definir de la siguiente manera:</p>
-					<pre><code>numero_decimal = 3.14</code></pre>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Boolean</h2>
-					<p>Los <em>booleanos</em> son un tipo de dato que representa un valor de verdad, es decir, verdadero o falso. En la mayoría de los lenguajes de programación, los booleanos se utilizan para realizar operaciones lógicas y de control de flujo, como la evaluación de condiciones y la toma de decisiones.</p>
-					<p>Por ejemplo, en Python, los booleanos se pueden definir de la siguiente manera:</p>
-					<pre><code>booleano = True</code></pre>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Estructuras de Control: while</h2>
-					<p>La estructura de control <code>while</code> se utiliza para repetir un bloque de código mientras una condición dada sea verdadera. En cada iteración del bucle, se evalúa la condición y, si es verdadera, se ejecuta el bloque de código.</p>
-					<p>Por ejemplo, en Python, un bucle <code>while</code> se puede definir de la siguiente manera:</p>
-					<pre><code>contador = 0
-				while contador &lt; 5:
-					print(contador)
-					contador += 1</code></pre>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Estructuras de Control: for</h2>
-					<p>La estructura de control <code>for</code> se utiliza para iterar sobre una secuencia (como una lista, tupla, rango, etc.) y ejecutar un bloque de código una vez para cada elemento de la secuencia.</p>
-					<p>Por ejemplo, en Python, un bucle <code>for</code> se puede definir de la siguiente manera:</p>
-					<pre><code>for i in range(5):
-					print(i)</code></pre>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Estructuras de Control: if</h2>
-					<p>La estructura de control <code>if</code> se utiliza para ejecutar un bloque de código si una condición dada es verdadera. Si la condición es falsa, el bloque de código dentro del <code>if</code> no se ejecuta.</p>
-					<p>Por ejemplo, en Python, una declaración <code>if</code> se puede definir de la siguiente manera:</p>
-					<pre><code>numero = 10
-				if numero &gt; 0:
-					print("El número es positivo")</code></pre>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>Estructuras de Control: if-else</h2>
-					<p>La estructura de control <code>if-else</code> se utiliza para ejecutar un bloque de código si una condición dada es verdadera, y otro bloque de código si la condición es falsa.</p>
-					<p>Por ejemplo, en Python, una declaración <code>if-else</code> se puede definir de la siguiente manera:</p>
-					<pre><code>numero = -5
-				if numero &gt; 0:
-					print("El número es positivo")
-				else:
-					print("El número es negativo o cero")</code></pre>
+				<h1 style="font-size:60px">Asistencia</h1>
+				<a href="https://docs.google.com/forms/d/1a_jfSh_3V3ufLgA6UOOXqkumW4nlJjnwxojnMVvaWDE/viewform?edit_requested=true" target="_blank">Asistencia al curso</a>
 				</section>
 				<section>
-					<h1>Ejercicios prácticos</h1>
-					<br>
-					<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
+				<h1 style="font-size:60px">Repaso Rápido de Listas, Tuplas y Diccionarios</h1>
+				<li>¿Qué son?</li>
+				<li>Sintaxis básica</li>
+				<li>Diferencias entre ellos</li>
+				</section>
+				<section>
+						<h1 style="font-size:60px">Listas</h1>
+						<p>Las listas en Python son colecciones ordenadas y modificables de elementos.</p>
+						<ul>
+							<li>Creación de listas</li>
+							<pre><code>mi_lista = [1, 2, 3, 4, 5]</code></pre>
+							<li>Acceso a elementos</li>
+							<pre><code>print(mi_lista[0])  # Imprime el primer elemento</code></pre>
+							<li>Modificación de listas</li>
+							<pre><code>mi_lista[0] = 'nuevo valor'  # Modifica el primer elemento</code></pre>
+							<li>Métodos útiles de lista</li>
+							<pre><code>mi_lista.append(6)  # Agrega un nuevo elemento al final de la lista</code></pre>
+						</ul>
+				</section>
+				<section>
+					<h1 style="font-size:60px">Tuplas</h1>
+					<p>Las tuplas en Python son colecciones ordenadas e inmutables de elementos.</p>
+					<ul>
+						<li>Creación de tuplas</li>
+						<pre><code>mi_tupla = (1, 2, 3, 4, 5)</code></pre>
+						<li>Acceso a elementos</li>
+						<pre><code>print(mi_tupla[0])  # Imprime el primer elemento</code></pre>
+						<li>Inmutabilidad de las tuplas</li>
+						<pre><code>mi_tupla[0] = 'nuevo valor'  # Esto generará un error, las tuplas son inmutables</code></pre>
+						<li>Utilidad de las tuplas</li>
+						<pre><code>def retorna_valores():
+					return 1, 2, 3  # Retorna múltiples valores como una tupla</code></pre>
+					</ul>
+				</section>
+				<section>
+					<h1 style="font-size:60px">Diccionarios</h1>
+					<p>Los diccionarios en Python son colecciones no ordenadas de pares clave-valor.</p>
+					<ul>
+						<li>Creación de diccionarios</li>
+						<pre><code>mi_diccionario = {'clave1': 'valor1', 'clave2': 'valor2'}</code></pre>
+						<li>Acceso a elementos mediante claves</li>
+						<pre><code>print(mi_diccionario['clave1'])  # Imprime el valor asociado a la clave 'clave1'</code></pre>
+						<li>Adición y eliminación de elementos</li>
+						<pre><code>mi_diccionario['nueva_clave'] = 'nuevo_valor'  # Agrega un nuevo par clave-valor</code></pre>
+						<li>Métodos útiles de diccionarios</li>
+						<pre><code>print(mi_diccionario.keys())  # Imprime las claves del diccionario</code></pre>
+					</ul>
 				</section>
 			</div>
 		</div>
