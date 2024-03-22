@@ -1,110 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Sesión 3</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/night.css">
-		<script src="./js/script.js"></script>
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1 style="font-size: 50px;">Sesión 4: Funciones y Módulos</h1>
-					<br>
-					<h1 style="font-size: 50px;">Viernes de Código</h1>
-					<br>		
-					<h1 style="font-size: 50px;">22/03/2024</h1>
-					<br>
-					<h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
-					<br>
-					<h1 style="font-size: 50px;">Universidad del Norte</h1>
-					<br>
-					<h1 style="font-size: 50px;">Departamento de Economía</h1>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h1 style="font-size:60px">Programación</h1>
-					<ul style="list-style-type:'🤩'">
-						<Li>Asistencia</Li>
-						<li>Introducción a funciones</li>
-						<li>¿Qué son los módulos?</li>
-						<li>Ejemplos y ejercicios prácticos</li>
-					</ul>
-				</section>
-				<section>
-				<h1 style="font-size:60px">Asistencia</h1>
-				<a href="https://docs.google.com/forms/d/1a_jfSh_3V3ufLgA6UOOXqkumW4nlJjnwxojnMVvaWDE/viewform?edit_requested=true" target="_blank">Asistencia al curso</a>
-				</section>
-				<section>
-				<h1 style="font-size:60px">Introducción a Funciones</h1>
-				<li>¿Qué son las funciones?</li>
-				<li>Definición de funciones en Python</li>
-				<li>Parámetros y argumentos</li>
-				<li>Retorno de valores</li>
-				</section>
-				<section>
-						<h1 style="font-size:60px">¿Qué son las funciones?</h1>
-						<p>Las funciones en Python son bloques de código reutilizable 
-							que realizan una tarea específica cuando son llamadas</p>
-						<ul>
-							<li>Creación de funciones (Forma General)</li>
-							<pre><code>def function(Input):
-											Output = Action
-											return Output<code></pre>
-						</ul>
-				</section>
-				<section>
-					<h1 style="font-size:60px">¿Qué son los módulos?</h1>
-					<p>Los módulos en Python son archivos que contienen definiciones y declaraciones de Python. 
-						Pueden incluir funciones, variables y clases que pueden ser utilizadas en otros programas de Python</p>
-				</section>
-				<section>
-				<ul>
-					<li>Creación de nuestros propios módulos</li>
-					<pre>Podemos crear nuestros propios módulos en Python escribiendo código en un archivo Python con extensión '.py'.</pre>
-				</ul>
-				</section>
-				<section>
-					<h1 style="font-size:60px">Organización de funciones en módulos</h1>
-					<p>Organizar funciones en módulos implica agrupar funciones relacionadas 
-						en un archivo Python para una mejor estructura y reutilización de código</p>
-				</section>
-				<section>
-					<h1 style="font-size:60px">Importación de módulos en otros scripts</h1>
-					<p>Para utilizar funciones y variables definidas en un módulo en otros scripts, 
-						podemos importar el módulo utilizando la palabra clave <code>import</code> seguida del nombre del módulo.</p>
-				</section>
-			<section>
-				Ejercicios prácticos
-				<br>
-				<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
-			</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sesión 4</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/night.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1 style="font-size: 50px;">Sesión 4: Funciones y Módulos</h1>
+                <br>
+                <h1 style="font-size: 50px;">Viernes de Código</h1>
+                <br>
+                <h1 style="font-size: 50px;">22/03/2024</h1>
+                <br>
+                <h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
+                <br>
+                <h1 style="font-size: 50px;">Universidad del Norte</h1>
+                <br>
+                <h1 style="font-size: 50px;">Departamento de Economía</h1>
+            </section>
+            <section data-auto-animate data-transition="convex">
+                <h1 style="font-size: 60px;">Programación</h1>
+                <ul style="list-style-type: none;">
+                    <li>Asistencia</li>
+                    <li>Introducción a funciones</li>
+                    <li>¿Qué son los módulos?</li>
+                    <li>Ejemplos y ejercicios prácticos</li>
+                </ul>
+            </section>
+            <section>
+                <h1 style="font-size: 60px;">Asistencia</h1>
+                <a href="https://docs.google.com/forms/d/1a_jfSh_3V3ufLgA6UOOXqkumW4nlJjnwxojnMVvaWDE/viewform?edit_requested=true" target="_blank">Asistencia al curso</a>
+            </section>
+            <section>
+                <h1 style="font-size: 60px;">Introducción a Funciones</h1>
+                <ul>
+                    <li>¿Qué son las funciones?</li>
+                    <li>Definición de funciones en Python</li>
+                    <li>Parámetros y argumentos</li>
+                    <li>Retorno de valores</li>
+                </ul>
+            </section>
+            <section>
+                <h1 style="font-size: 60px;">¿Qué son las funciones?</h1>
+                <p>Las funciones en Python son bloques de código reutilizable que realizan una tarea específica cuando son llamadas.</p>
+                <ul>
+                    <li>Creación de funciones (Forma General)</li>
+                    <pre><code>def function(Input):
+                                    Output = Action
+                                    return Output</code></pre>
+                </ul>
+            </section>
+            <section>
+                <h1 style="font-size: 60px;">¿Qué son los módulos?</h1>
+                <p>Los módulos en Python son archivos que contienen definiciones y declaraciones de Python. Pueden incluir funciones, variables y clases que pueden ser utilizadas en otros programas de Python.</p>
+            </section>
+            <section>
+                <ul>
+                    <li>Creación de nuestros propios módulos</li>
+                    <pre>Podemos crear nuestros propios módulos en Python escribiendo código en un archivo Python con extensión '.py'.</pre>
+                </ul>
+            </section>
+            <section>
+                <h1 style="font-size: 60px;">Organización de funciones en módulos</h1>
+                <p>Organizar funciones en módulos implica agrupar funciones relacionadas en un archivo Python para una mejor estructura y reutilización de código.</p>
+            </section>
+            <section>
+                <h1 style="font-size: 60px;">Importación de módulos en otros scripts</h1>
+                <p>Para utilizar funciones y variables definidas en un módulo en otros scripts, podemos importar el módulo utilizando la palabra clave <code>import</code> seguida del nombre del módulo.</p>
+            </section>
+            <section>
+                Ejercicios prácticos
+                <br>
+                <a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
+            </section>
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // Más información sobre inicialización y configuración:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            // Aprende sobre plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
 </html>
