@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Sesión 5</title>
+		<title>Sesión 6</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,9 +18,9 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1 style="font-size: 50px;">Sesión 5: Introducción al Manejo de Datos</h1>
+					<h1 style="font-size: 50px;">Sesión 6: Manipulación y manejo de dataframes II</h1>
 					<br>		
-					<h1 style="font-size: 50px;">5/04/2024</h1>
+					<h1 style="font-size: 50px;">12/04/2024</h1>
 					<br>
 					<h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
 					<br>
@@ -34,57 +34,70 @@
 					<h1 style="font-size:60px">Programación</h1>
 					<ul style="list-style-type:'🤩'">
 						<li>Asistencia</li>
-						<li>¿Qué es un dataframe?</li>
-						<li>Importación de dataframes: Introducción a Pandas</li>
-						<li>Manipulación básica de dataframes: Seleccionar filas y columnas</li>
-						<li>Operaciones básicas para columnas</li>
-						<li>Análisis exploratorio de dataframes: función describe</li>
+						<li>Selección de columnas</li>
+						<li>Filtrado de datos</li>
+						<li>Agrupación de datos</li>
+						<li>Agregación condicional</li>
+						<li>Formato Long - Wide</li>
 					</ul>
 				</section>
+
 				<section>
 					<h2>Asistencia</h2>
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcMdvBV2QIDSeiKMKnlZR3gHNZfUbcjc7lRXuhTyYj8d7-LA/viewform?usp=pp_url" target="_blank">Asistencia</a>
 				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2>¿Qué es un dataframe?</h2>
-					<p class="fragment" style="text-align: justify; font-size:40px">Un DataFrame es como una tabla en una hoja de cálculo. Es una forma de organizar datos en filas y columnas, como una lista de listas donde cada fila tiene información relacionada.</p>
-				</section>
-				<section data-auto-animate>
-					<h2>Importación de dataframes: Introducción a Pandas</h2>
-					<p>Pandas es un módulo de Python utilizado para manipular y analizar datos de manera eficiente. Pandas nos permite importar distintos formatos. Veámoslo con un ejemplo</p>
-				</section>
-				<section data-auto-animate data-transition="convex">
-					<h2 style="font-size:40px">Manipulación básica de dataframes: Seleccionar filas y columnas</h2>
-					<pre><code data-trim data-noescape>
-						df["Colname"] #Selecciona la columna llamada Colname
-						df.loc[1] # Selecciona la fila con el índice 1
-					</code></p>
 
-				</section>
 				<section data-auto-animate>
-					<h2>Operaciones básicas para columnas</h2>
+					<h2>Selección de columnas</h2>
+					<p style="text-align: justify; font-size:40px">
 					<pre> <code data-trim data-noescape>
-						df["Colname"].max # Valor máximo de la columna Colname
-						df["Colname"].min # Valor mínimo de la columna Colname
-						df["Colname"] - df["Colname 2"]
+					df[['Colname1', 'Colname2']])</p>
 					</code></pre>
 				</section>
-				<section>
-					Algunas operaciones básicas del módulo Pandas
-					<br>
-					<img style="width: 40%"src="https://datascientest.com/es/wp-content/uploads/sites/7/2021/11/Sans-titre-2-02-933x1024.png" alt="Meme ramdom">
-					<br>
+
+				<section data-auto-animate>
+					<h2>Filtrado de datos</h2>
+					<p style="text-align: justify; font-size:40px">
+					<pre> <code data-trim data-noescape>
+					df[df['Colname1'] > 25]</p>
+					</code></pre>
 				</section>
 
-				<section>
-					Análisis exploratorio de dataframes: función describe
-					<br>
-					<pre><code data-trim data-noescape>
-						df.describe().round(1) # Estadísticas descriptivas de nuestro dataframe
-					</pre></code>
+				<section data-auto-animate>
+					<h2>Agrupación de datos</h2>
+					<p style="text-align: justify; font-size:12px">
+					<pre> <code data-trim data-noescape>
+						import pandas as pd
+data = {
+    'Nombre': ['Ana', 'Luis', 'Carmen', 'Jose'],
+    'Edad': [25, 30, 22, 27],
+    'Ciudad': ['Madrid', 'Barcelona', 'Madrid', 'Valencia'],
+    'Salario': [2000, 2500, 1800, 2200]
+}
+aggregated_data = (
+    pd.DataFrame(data)  # Creación del DataFrame
+    .groupby('Ciudad')  # Agrupación por 'Ciudad'
+    .agg({
+        'Edad': 'mean',  # Calcula la media de 'Edad'
+        'Salario': 'sum'  # Suma los 'Salarios'
+    })
+)
+print(aggregated_data)
+</p>
+					</code></pre>
 				</section>
-				<section>
-					<h2>Guardar dataframe</h2>
+
+				<section data-auto-animate>
+					<h2>Agregación condicional</h2>
+					<p style="text-align: justify; font-size:40px">
+					<pre> <code data-trim data-noescape>
+					df.groupby('Colname1')['Colname2'].agg([min, max, sum])</p>
+					</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Formato Long - Wide</h2>
+					<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
 				</section>
 			</div>
 		</div>
