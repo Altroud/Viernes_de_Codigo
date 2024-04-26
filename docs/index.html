@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Sesión 7</title>
+		<title>Sesión 8</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,9 +18,9 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1 style="font-size: 50px;">Sesión 7: Introducción a Regresión Lineal</h1>
+					<h1 style="font-size: 50px;">Sesión 8: Regresi´ón Lineal Múltiple</h1>
 					<br>		
-					<h1 style="font-size: 50px;">19/04/2024</h1>
+					<h1 style="font-size: 50px;">26/04/2024</h1>
 					<br>
 					<h1 style="font-size: 50px;">José David Mendoza Pérez</h1>
 					<br>
@@ -34,99 +34,21 @@
 					<h1 style="font-size:60px">Programación</h1>
 					<ul style="list-style-type:'🤩'">
 						<li>Asistencia</li>
-						<li>Introducción a la Regresión Lineal</li>
-						<li>Conceptos Básicos</li>
-						<li>Cómo Funciona la Regresión Lineal</li>
-						<li>Interpretación de Resultados</li>
-						<li>Aplicaciones en la vida real</li>
-						<li>Ejercicios prácticos</li>	
+						<li>Boston House Prices</li>
 					</ul>
 				</section>
 
-				<section>
-					<h2>Asistencia</h2>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcMdvBV2QIDSeiKMKnlZR3gHNZfUbcjc7lRXuhTyYj8d7-LA/viewform?usp=pp_url" target="_blank">Asistencia</a>
-				</section>
-
-				<section data-auto-animate>
-				<ul>
-					<h2>Introducción a la Regresión Lineal</h2>
-					<li>Definición: Método estadístico para modelar la relación entre una variable dependiente y una o más variables independientes.</li>
-					<li>Objetivo: Predecir valores y entender la relación entre variables.</li>
-				</ul>
-				</section>
-
-				<section data-auto-animate>
-				<ul>
-					<h2>Conceptos básicos</h2>
-					<li><strong>Variable dependiente (Y):</strong> Lo que se quiere predecir o explicar.</li>
-					<li><strong>Variable(s) independiente(s) (X):</strong> Factores que influyen o predicen la variable dependiente.</li>
-				</ul>
-			</section>
-			<section data-auto-animate>
-				<ul>
-					<h2><strong>Ecuación de la línea:</strong> \( Y = a + bX + e \)</h2>
-					<p>Donde:</p>
-						<li><strong>"a" es la intersección con el eje Y:</strong> Representa el valor de Y cuando X es 0.</li>
-						<li><strong>"b" es la pendiente de la línea:</strong> Indica el cambio en Y por cada unidad de cambio en X.</li>
-						<li><strong>"e" es el error estadístico:</strong> Mide la diferencia entre los valores observados de Y y los valores predichos por el modelo.</li>
-				</ul>
-				</section>
-
-				<section data-auto-animate>
-				<p><strong>Cómo Funciona la Regresión Lineal</strong>
-				<ul>
-					<li>Uso de datos históricos para estimar los coeficientes (a y b).</li>
-					<li>Minimización de la suma de los cuadrados de los errores (método de mínimos cuadrados).</li>
-					<li>Coeficiente "b": Indica cuánto cambia Y con un cambio unitario en X.</li>
-					<li>Significado de la intersección (a): Valor esperado de Y cuando X es cero.</li>
-					<li>Importancia del valor "p" y del R-cuadrado para validar la significancia y el ajuste del modelo.</li>
-				</ul>
-				</section>
-
-				<section data-auto-animate>
-				<p><strong>Aplicaciones de la vida real</strong></p>
-					<ul>
-						<li><strong>Economía:</strong> La regresión lineal se utiliza para predecir el crecimiento económico, los niveles de empleo, y la inflación en función de variables como las tasas de interés, el gasto gubernamental, y la política fiscal.</li>
-						<li><strong>Medicina:</strong> Se aplica para entender la relación entre factores de riesgo y enfermedades, como predecir la presión arterial en función de variables como el peso, la edad, y los hábitos de ejercicio.</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li><strong>Finanzas:</strong> Ayuda a modelar los rendimientos esperados de los activos financieros, evaluando el impacto de factores como cambios en las tasas de interés o índices económicos.</li>
-						<li><strong>Marketing:</strong> Utilizada para predecir las ventas en función de la inversión publicitaria, el precio de los productos, y otros factores de marketing estratégico.</li>
-					</ul>
-					</section>
-				<section>
-				<ul>
-					<li><strong>Investigación ambiental:</strong> Se utiliza para predecir los niveles de contaminación en función de variables como el volumen de tráfico y las condiciones meteorológicas, ayudando a diseñar políticas para la gestión ambiental.</li>
-					<li><strong>Tecnología:</strong> En la ingeniería de software y el desarrollo de productos, la regresión lineal puede ayudar a prever el tiempo de desarrollo necesario basado en la complejidad del proyecto y los recursos disponibles.</li>
-				</ul>
-				</section>
-
-				<section>
-					<p><strong>Aplicaciones en Economía</strong></p>
-					<ul>
-					<li><strong>Economía Laboral:</strong> En estudios económicos, se utiliza la regresión lineal para analizar cómo los salarios de los trabajadores dependen de la educación, la experiencia laboral y otros factores socioeconómicos, permitiendo entender mejor las disparidades salariales y diseñar políticas laborales más efectivas.</li>
-					</ul>
-				</section>
-
-				<section>
-					<ul>
-					<li><strong>Macroeconomía:</strong> Se aplica para modelar y predecir el Producto Interno Bruto (PIB) de un país en función de factores como la inversión en infraestructura, gasto público, tasas de interés y otros indicadores macroeconómicos, lo que es crucial para la planificación económica y la toma de decisiones fiscales.</li>
-					</ul>	
-				</section>
-				
-				<section data-auto-animate>
-					<h2>Ejercicios</h2>
-					<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
-				</section>
-				<section>
-					<p><strong>Consideraciones sobre los modelos de regresión lineal</strong></p>
-					
-				</section>
 			</div>
 		</div>
+		<section>
+			<h2>Asistencia</h2>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcMdvBV2QIDSeiKMKnlZR3gHNZfUbcjc7lRXuhTyYj8d7-LA/viewform?usp=pp_url" target="_blank">Asistencia</a>
+		</section>
+
+		<section data-auto-animate>
+			<h2>Sesión 8</h2>
+			<a href="https://github.com/Altroud/Viernes_de_Codigo" target="_blank">Repositorio de GitHub</a>
+		</section>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
